@@ -40,6 +40,8 @@ nav {
     padding: 15px;
     text-align: center;
     border-bottom: 3px solid #990000;
+
+    position: relative;
 }
 
 nav a {
@@ -54,7 +56,44 @@ nav a {
 nav a:hover {
     color: #ff3333;
 }
+/* ===== SIGN UP BUTTON ===== */
 
+.signup-button {
+
+    position: absolute;
+
+    right: 20px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background-color: #28a745;
+
+    color: white !important;
+
+    text-decoration: none;
+
+    padding: 12px 22px;
+
+    margin: 0;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    transition: .3s;
+}
+
+.signup-button:hover {
+
+    background-color: #34c759;
+
+    color: white !important;
+
+    transform: translateY(-50%) scale(1.05);
+}
 /* ===== HERO SLIDESHOW ===== */
 
 .hero {
@@ -244,7 +283,23 @@ button:hover {
 
     background: #ff3333;
 }
+/* ===== MAP ===== */
 
+#map{
+
+    width:100%;
+
+    height:450px;
+
+    border:3px solid #990000;
+
+    border-radius:10px;
+
+    margin-top:20px;
+
+    box-shadow:0 0 20px rgba(255,0,0,.25);
+
+}
 /* ===== FOOTER ===== */
 
 footer {
@@ -262,6 +317,23 @@ footer {
 
 @media (max-width:768px){
 
+.signup-button{
+
+    position: static;
+
+    display: inline-block;
+
+    transform: none;
+
+    margin-top: 12px;
+
+}
+
+.signup-button:hover{
+
+    transform: scale(1.05);
+
+}
 .content{
 
 flex-direction:column;
