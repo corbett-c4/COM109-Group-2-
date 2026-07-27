@@ -17,20 +17,43 @@ body {
 /* ===== HEADER ===== */
 
 header {
+
     background-color: #990000;
+
     color: white;
+
     text-align: center;
+
     padding: 40px 20px;
+
+    min-height: 130px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
 }
 
 header h1 {
+
     margin: 0;
+
     font-size: 42px;
+
 }
 
 header p {
+
+    margin: 10px 0 0;
+
     font-size: 20px;
+
     font-style: italic;
+
 }
 
 /* ===== NAVIGATION ===== */
