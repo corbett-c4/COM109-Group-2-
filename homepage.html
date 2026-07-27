@@ -68,18 +68,25 @@
 
 <div class="hero">
 
-<div class="hero-text">
+    <div class="slideshow">
 
-```
-<h2>BUILD YOUR BEST SELF</h2>
+        <img src="images/bench.jpg" class="slide active" alt="Gym Bench">
 
-<p>
-    Train Hard • Stay Strong • Never Give Up
-</p>
+        <img src="images/dumbells.jpg" class="slide" alt="Dumbbells">
 
+        <img src="images/ironpeakfitness.jpg" class="slide" alt="Iron Peak Gym">
 
+    </div>
 
-</div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-text">
+
+        <h2>BUILD YOUR BEST SELF</h2>
+
+        <p>Train Hard • Stay Strong • Never Give Up</p>
+
+    </div>
 
 </div>
 
@@ -97,7 +104,6 @@
 
 <div class="text">
 
-```
 <h2>Welcome to Iron Peak Fitness</h2>
 
 <p>
@@ -117,12 +123,12 @@
 
 <div class="image">
 
-```
+
 <img
     src="images/weights.jpg"
     alt="Gym weights and equipment"
 >
-```
+
 
 </div>
 
@@ -134,20 +140,11 @@
 
 <section class="content">
 
-<div class="image">
 
-```
-<img
-    src="images/trainer.jpg"
-    alt="Personal trainer helping a gym member"
->
-```
-
-</div>
 
 <div class="text">
 
-```
+
 <h2>Why Choose Us?</h2>
 
 <ul>
@@ -165,10 +162,16 @@
     <li>📅 Flexible membership plans</li>
 
 </ul>
-```
+
 
 </div>
+<div class="image">
 
+
+<img
+    src="images/trainer.jpg"
+    alt="Personal trainer helping a gym member"
+>
 </section>
 
 
@@ -201,7 +204,31 @@
 </p>
 
 </footer>
+<script>
 
+const slides = document.querySelectorAll(".slide");
+
+let currentSlide = 0;
+
+function changeSlide() {
+
+    slides[currentSlide].classList.remove("active");
+
+    currentSlide++;
+
+    if (currentSlide >= slides.length) {
+
+        currentSlide = 0;
+
+    }
+
+    slides[currentSlide].classList.add("active");
+
+}
+
+setInterval(changeSlide, 3500);
+
+</script>
 </body>
 
 </html>
