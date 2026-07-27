@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Supplements - Iron Peak Fitness</title>
+
+
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="supplements.css">
+
+
+<!-- jQuery -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+<!-- ==============================
+     HEADER
+============================== -->
+
+
+<header>
+
+<h1>Iron Peak Fitness</h1>
+
+<p>
+    <em>"Fuel your body. Build your strength."</em>
+</p>
+
+</header>
+
+
+
+<!-- ==============================
+     NAVIGATION
+============================== -->
+
+
+<nav>
+
+
+<div class="nav-links">
+
+
+     <a href="../homepage.html">Home</a>
+
+     <a href="../membership.html">Membership</a>
+
+     <a href="../classes.html">Classes</a>
+
+     <a href="../trainers.html">Personal Trainers</a>
+
+     <a href="../about.html">About Us</a>
+
+     <a href="../contact/contact.html">Contact</a>
+
+     <a href="../supplements/supplements.html">Supplements</a>
+
+
+</div>
+
+
+<a href="signup.html" class="signup-button">
+    Sign Up
+</a>
+
+
+</nav>
+
+
+
+
+<!-- ==============================
+     HERO
+============================== -->
+
+
+<div class="hero">
+
+
+<img src="../images/supplements-hero.jpg"
+     class="slide active"
+     alt="Fitness supplements">
+
+
+<div class="hero-overlay"></div>
+
+
+<div class="hero-text">
+
+
+<h2>SUPPLEMENTS</h2>
+
+
+<p>
+Premium products to support your fitness goals.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<main>
+
+
+
+<!-- ==============================
+     INTRODUCTION
+============================== -->
+
+
+<section>
+
+
+<h2>Performance Nutrition</h2>
+
+
+<p>
+
+At Iron Peak Fitness, we provide quality supplements
+designed to support muscle growth, recovery and
+overall performance.
+
+</p>
+
+
+<p>
+
+Whether you are building strength, improving endurance
+or maintaining a healthy lifestyle, our supplement range
+can help support your training.
+
+</p>
+
+
+</section>
+
+
+
+
+
+<!-- ==============================
+     SEARCH AND FILTER
+============================== -->
+
+
+<section>
+
+
+<h2>Browse Supplements</h2>
+
+
+<input 
+type="text"
+id="searchBar"
+placeholder="Search supplements..."
+>
+
+
+<div class="filter-buttons">
+
+
+<button class="filter-btn" data-category="All">
+    All
+</button>
+
+
+<button class="filter-btn" data-category="Protein">
+    Protein
+</button>
+
+
+<button class="filter-btn" data-category="Creatine">
+    Creatine
+</button>
+
+
+<button class="filter-btn" data-category="Vitamins">
+    Vitamins
+</button>
+
+
+<button class="filter-btn" data-category="Pre Workout">
+    Pre Workout
+</button>
+
+
+</div>
+
+
+
+<p id="basketCount">
+
+Basket: 0 items
+
+</p>
+
+
+</section>
+
+
+
+
+
+<!-- ==============================
+     PRODUCT GRID
+============================== -->
+
+
+<section>
+
+
+<h2>Our Products</h2>
+
+
+<div class="products-grid">
+
+
+
+<article class="product-card"
+data-category="Protein">
+
+
+<img src="../images/whey.webp"
+alt="Whey protein supplement">
+
+
+<h3>Whey Protein</h3>
+
+
+<p>
+
+High quality protein powder
+to support muscle growth
+and recovery.
+
+</p>
+
+
+<h4>£39.99</h4>
+
+
+<button class="add-btn"
+data-product="Whey Protein">
+
+Add To Basket
+
+</button>
+
+
+</article>
+
+
+
+
+
+<article class="product-card"
+data-category="Creatine">
+
+
+<img src="../images/creatine.webp"
+alt="Creatine supplement">
+
+
+<h3>Creatine Monohydrate</h3>
+
+
+<p>
+
+Improves strength, power
+and training performance.
+
+</p>
+
+
+<h4>£24.99</h4>
+
+
+<button class="add-btn"
+data-product="Creatine Monohydrate">
+
+Add To Basket
+
+</button>
+
+
+</article>
+
+
+
+
+
+<article class="product-card"
+data-category="Vitamins">
+
+
+<img src="../images/vitamins.webp"
+alt="Vitamin supplements">
+
+
+<h3>Daily Vitamins</h3>
+
+
+<p>
+
+Essential vitamins to support
+general health and wellbeing.
+
+</p>
+
+
+<h4>£14.99</h4>
+
+
+<button class="add-btn"
+data-product="Daily Vitamins">
+
+Add To Basket
+
+</button>
+
+
+</article>
+
+
+
+
+
+<article class="product-card"
+data-category="Pre Workout">
+
+
+<img src="../images/preworkout.webp"
+alt="Pre workout supplement">
+
+
+<h3>Pre Workout</h3>
+
+
+<p>
+
+Boost energy and focus
+before intense sessions.
+
+</p>
+
+
+<h4>£29.99</h4>
+
+
+<button class="add-btn"
+data-product="Pre Workout">
+
+Add To Basket
+
+</button>
+
+
+</article>
+
+
+
+</div>
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+
+<!-- ==============================
+     FOOTER
+============================== -->
+
+
+<footer>
+
+
+<p>
+<strong>Iron Peak Fitness</strong>
+</p>
+
+
+<p>
+123 Fitness Street, Belfast
+</p>
+
+
+<p>
+Email: info@ironpeakfitness.com
+</p>
+
+
+<p>
+Phone: 028 9000 1234
+</p>
+
+
+<p>
+&copy; 2026 Iron Peak Fitness. All Rights Reserved.
+</p>
+
+
+</footer>
+
+
+
+<script src="supplements.js"></script>
+
+
+</body>
+
+
+</html>
