@@ -1,0 +1,288 @@
+/* ==============================
+   CONTACT PAGE
+============================== */
+
+
+/* ===== CONTACT INFORMATION GRID ===== */
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    margin-top: 20px;
+
+}
+
+
+.contact-card {
+
+    background: rgba(34,34,34,.9);
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    border-left: 5px solid #cc0000;
+
+    text-align: center;
+
+    transition: .3s;
+
+}
+
+
+.contact-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 0 20px rgba(255,0,0,.25);
+
+}
+
+
+.contact-card h3 {
+
+    color: #ff3333;
+
+    margin-bottom: 15px;
+
+}
+
+
+.contact-card p {
+
+    color: #dddddd;
+
+    line-height: 1.6;
+
+}
+
+
+/* ===== CONTACT FORM ===== */
+
+
+#contactForm {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+#contactForm label {
+
+    font-weight: bold;
+
+    color: white;
+
+}
+
+
+#contactForm input,
+#contactForm select,
+#contactForm textarea {
+
+
+    width: 100%;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    background: #222;
+
+    color: white;
+
+    border: 2px solid #990000;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+}
+
+
+#contactForm input:focus,
+#contactForm select:focus,
+#contactForm textarea:focus {
+
+
+    outline: none;
+
+    border-color: #ff3333;
+
+    box-shadow: 0 0 10px rgba(255,0,0,.4);
+
+}
+
+
+#contactForm textarea {
+
+    resize: vertical;
+
+}
+
+
+/* ===== CHARACTER COUNTER ===== */
+
+
+#characterCount {
+
+    color: #bbbbbb;
+
+    font-size: 14px;
+
+    text-align: right;
+
+    margin-top: -5px;
+
+}
+
+
+/* ===== BUTTON ===== */
+
+
+#contactForm button {
+
+    width: 200px;
+
+    align-self: center;
+
+    margin-top: 15px;
+
+    font-size: 18px;
+
+}
+
+
+#contactForm button:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+/* ===== SUCCESS MESSAGE ===== */
+
+
+#successMessage {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: rgba(40,167,69,.2);
+
+    border-left: 5px solid #28a745;
+
+    border-radius: 5px;
+
+    color: #66ff66;
+
+    font-weight: bold;
+
+}
+
+
+/* ===== FAQ ===== */
+
+
+.faq-question {
+
+    background: #222;
+
+    color: white;
+
+    padding: 15px;
+
+    border-left: 5px solid #cc0000;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.faq-question:hover {
+
+    color: #ff3333;
+
+}
+
+
+.faq-answer {
+
+    display: none;
+
+    padding: 15px;
+
+    background: rgba(0,0,0,.4);
+
+    border-radius: 5px;
+
+    margin-top: -10px;
+
+    margin-bottom: 15px;
+
+    color: #dddddd;
+
+}
+
+
+/* ===== HERO IMAGE ===== */
+
+
+.hero img {
+
+    object-fit: cover;
+
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+
+@media(max-width:1000px){
+
+
+.contact-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.contact-grid {
+
+    grid-template-columns: 1fr;
+
+}
+
+
+#contactForm button {
+
+    width: 100%;
+
+}
+
+
+}

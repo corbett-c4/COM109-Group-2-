@@ -1,0 +1,184 @@
+/* Sign Up & Login Forms */
+
+/* Skip link */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    background: #cc0000;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 1000;
+    font-weight: bold;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Form styles */
+#signupForm,
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#signupForm label,
+#loginForm label {
+    font-weight: bold;
+    color: white;
+}
+
+#signupForm input,
+#signupForm select,
+#loginForm input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    background: #222;
+    color: white;
+    border: 2px solid #990000;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#signupForm input:focus,
+#signupForm select:focus,
+#loginForm input:focus {
+    outline: none;
+    border-color: #ff3333;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+/* Field-level error messages */
+.field-error {
+    color: #ff6666;
+    font-size: 13px;
+    min-height: 16px;
+    display: block;
+}
+
+/* Buttons */
+#signupForm button,
+#loginForm button {
+    width: 220px;
+    align-self: center;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+#signupForm button:hover,
+#loginForm button:hover {
+    transform: scale(1.05);
+}
+
+/* Messages */
+#formMessage,
+#loginMessage {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.msg-error {
+    background: rgba(204, 0, 0, 0.2);
+    border-left: 5px solid #cc0000;
+    color: #ff6666;
+}
+
+.msg-success {
+    background: rgba(40, 167, 69, 0.2);
+    border-left: 5px solid #28a745;
+    color: #66ff66;
+}
+
+/* Input error highlight */
+.input-error {
+    border-color: #ff3333 !important;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5) !important;
+    animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+/* Hero image */
+.hero img {
+    object-fit: cover;
+}
+
+/* Password toggle */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 45px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.toggle-password:hover,
+.toggle-password:focus {
+    opacity: 1;
+    outline: 2px solid #ff3333;
+    outline-offset: 2px;
+    border-radius: 3px;
+}
+
+/* Password strength meter */
+.strength-meter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.strength-bar {
+    flex: 1;
+    height: 6px;
+    background: #333;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.strength-fill {
+    height: 100%;
+    width: 0;
+    border-radius: 3px;
+    transition: width 0.3s, background 0.3s;
+}
+
+.strength-text {
+    font-size: 13px;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #signupForm button,
+    #loginForm button {
+        width: 100%;
+    }
+}
