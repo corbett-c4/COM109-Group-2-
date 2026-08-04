@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - Iron Peak Fitness</title>
+    <link rel="icon" type="image/x-icon" href="../favicon_io/Favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/Favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/Favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="update.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Iron Peak Fitness</h1>
+    <p><em>"Progress, not perfection."</em></p>
+</header>
+
+<nav>
+    <div class="nav-links">
+        <a href="../homepage.html">Home</a>
+        <a href="../membership.html">Membership</a>
+        <a href="../classes.html">Classes</a>
+        <a href="../trainers.html">Personal Trainers</a>
+        <a href="../about.html">About Us</a>
+        <a href="../contact/contact.html">Contact</a>
+        <a href="../supplements/supplements.html">Supplements</a>
+    </div>
+    <a href="../signup/signup.html" class="signup-button">Sign Up</a>
+</nav>
+
+<div class="hero">
+    <img src="../images/ironpeakfitness.jpg" class="slide active" alt="Iron Peak Fitness gym">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+        <h2>MY ACCOUNT</h2>
+        <p>View and update your membership details.</p>
+    </div>
+</div>
+
+<main>
+
+<!-- Current Details Display -->
+<section id="currentDetails">
+    <h2>Your Details</h2>
+    <div class="details-grid">
+        <div class="detail-item">
+            <span class="detail-label">Name</span>
+            <span class="detail-value" id="displayName">—</span>
+        </div>
+        <div class="detail-item">
+            <span class="detail-label">Email</span>
+            <span class="detail-value" id="displayEmail">—</span>
+        </div>
+        <div class="detail-item">
+            <span class="detail-label">Phone</span>
+            <span class="detail-value" id="displayPhone">—</span>
+        </div>
+        <div class="detail-item">
+            <span class="detail-label">Date of Birth</span>
+            <span class="detail-value" id="displayDob">—</span>
+        </div>
+        <div class="detail-item">
+            <span class="detail-label">Membership</span>
+            <span class="detail-value" id="displayMembership">—</span>
+        </div>
+        <div class="detail-item">
+            <span class="detail-label">Member Since</span>
+            <span class="detail-value" id="displayDate">—</span>
+        </div>
+    </div>
+
+    <button id="editBtn">Edit Details</button>
+    <button id="logoutBtn" class="logout-btn">Log Out</button>
+</section>
+
+<!-- Edit Form (hidden by default) -->
+<section id="editSection" style="display: none;">
+    <h2>Update Your Details</h2>
+
+    <form id="updateForm" novalidate>
+
+        <label for="editName">Full Name *</label>
+        <input type="text" id="editName" required>
+
+        <label for="editPhone">Phone Number</label>
+        <input type="tel" id="editPhone">
+
+        <label for="editMembership">Membership Type *</label>
+        <select id="editMembership" required>
+            <option value="basic">Basic - £19.99/month</option>
+            <option value="premium">Premium - £34.99/month</option>
+            <option value="student">Student - £14.99/month</option>
+        </select>
+
+        <label for="editPassword">New Password (leave blank to keep current)</label>
+        <div class="password-wrapper">
+            <input type="password" id="editPassword" placeholder="Min 8 characters">
+            <span class="toggle-password" data-target="editPassword">👁</span>
+        </div>
+
+        <label for="editConfirmPassword">Confirm New Password</label>
+        <div class="password-wrapper">
+            <input type="password" id="editConfirmPassword">
+            <span class="toggle-password" data-target="editConfirmPassword">👁</span>
+        </div>
+
+        <div class="form-buttons">
+            <button type="submit">Save Changes</button>
+            <button type="button" id="cancelBtn" class="cancel-btn">Cancel</button>
+        </div>
+
+    </form>
+
+    <div id="updateMessage" role="alert" aria-live="polite"></div>
+</section>
+
+</main>
+
+<footer>
+    <p><strong>Iron Peak Fitness</strong></p>
+    <p>123 Fitness Street, Belfast</p>
+    <p>Email: info@ironpeakfitness.com</p>
+    <p>Phone: 028 9000 1234</p>
+    <p>&copy; 2026 Iron Peak Fitness. All Rights Reserved.</p>
+</footer>
+
+<script src="update.js"></script>
+<script src="../js/auth.js"></script>
+</body>
+</html>

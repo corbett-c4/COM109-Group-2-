@@ -1,0 +1,81 @@
+/* About Page Styles */
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.mission-card {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #cc0000;
+    transition: transform 0.3s;
+}
+
+.mission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+.mission-card h3 {
+    color: #ff3333;
+    margin-bottom: 10px;
+}
+
+.mission-card p {
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.hours-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.hours-card {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #cc0000;
+    text-align: center;
+}
+
+.hours-card h3 {
+    color: #ff3333;
+    margin-bottom: 10px;
+}
+
+.hours-card p {
+    color: #f5f5f5;
+    font-size: 18px;
+}
+
+.inline-link {
+    color: #ff3333;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.inline-link:hover {
+    color: white;
+}
+
+.hero img {
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hours-grid {
+        grid-template-columns: 1fr;
+    }
+}

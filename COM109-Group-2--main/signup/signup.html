@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Iron Peak Fitness</title>
+    <link rel="icon" type="image/x-icon" href="../favicon_io/Favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/Favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/Favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Iron Peak Fitness</h1>
+    <p><em>"Strength does not come from the body. It comes from the will."</em></p>
+</header>
+
+<nav>
+    <div class="nav-links">
+        <a href="../homepage.html">Home</a>
+        <a href="../membership.html">Membership</a>
+        <a href="../classes.html">Classes</a>
+        <a href="../trainers.html">Personal Trainers</a>
+        <a href="../about.html">About Us</a>
+        <a href="../contact/contact.html">Contact</a>
+        <a href="../supplements/supplements.html">Supplements</a>
+    </div>
+    <a href="signup.html" class="signup-button">Sign Up</a>
+</nav>
+
+<div class="hero">
+    <img src="../images/ironpeakfitness.jpg" class="slide active" alt="Iron Peak Fitness gym interior">
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+        <h2>JOIN THE TEAM</h2>
+        <p>Start your fitness journey today.</p>
+    </div>
+</div>
+
+<main>
+
+<!-- Sign Up Form -->
+<section>
+    <h2>Create Your Account</h2>
+
+    <form id="signupForm" novalidate>
+
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" placeholder="e.g. John Smith" required>
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" placeholder="e.g. john@email.com" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="e.g. 07712345678">
+
+        <label for="dob">Date of Birth *</label>
+        <input type="date" id="dob" required>
+
+        <label for="membership">Membership Type *</label>
+        <select id="membership" required>
+            <option value="">Choose a plan...</option>
+            <option value="basic">Basic - £19.99/month</option>
+            <option value="premium">Premium - £34.99/month</option>
+            <option value="student">Student - £14.99/month</option>
+        </select>
+
+        <label for="password">Password *</label>
+        <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Min 8 characters" required>
+            <span class="toggle-password" data-target="password">👁</span>
+        </div>
+
+        <label for="confirmPassword">Confirm Password *</label>
+        <div class="password-wrapper">
+            <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
+            <span class="toggle-password" data-target="confirmPassword">👁</span>
+        </div>
+
+        <button type="submit">Create Account</button>
+
+    </form>
+
+    <div id="formMessage" role="alert" aria-live="polite"></div>
+</section>
+
+<!-- Login Section -->
+<section>
+    <h2>Already a Member?</h2>
+    <p>Log in below to access your account.</p>
+
+    <form id="loginForm" novalidate>
+
+        <label for="loginEmail">Email Address *</label>
+        <input type="email" id="loginEmail" placeholder="Your email" required>
+
+        <label for="loginPassword">Password *</label>
+        <div class="password-wrapper">
+            <input type="password" id="loginPassword" placeholder="Your password" required>
+            <span class="toggle-password" data-target="loginPassword">👁</span>
+        </div>
+
+        <button type="submit">Log In</button>
+
+    </form>
+
+    <div id="loginMessage" role="alert" aria-live="polite"></div>
+</section>
+
+</main>
+
+<footer>
+    <p><strong>Iron Peak Fitness</strong></p>
+    <p>123 Fitness Street, Belfast</p>
+    <p>Email: info@ironpeakfitness.com</p>
+    <p>Phone: 028 9000 1234</p>
+    <p>&copy; 2026 Iron Peak Fitness. All Rights Reserved.</p>
+</footer>
+
+<script src="signup.js"></script>
+<script src="../js/auth.js"></script>
+</body>
+</html>

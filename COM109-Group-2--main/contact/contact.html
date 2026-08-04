@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Iron Peak Fitness</title>
+    <link rel="icon" type="image/x-icon" href="../favicon_io/Favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/Favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/Favicon/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</head>
+
+<body>
+
+<!-- ==============================
+     HEADER
+============================== -->
+
+<header>
+
+    <h1>Iron Peak Fitness</h1>
+
+    <p>
+        <em>"Every journey begins with one step."</em>
+    </p>
+
+</header>
+
+<!-- ==============================
+     NAVIGATION
+============================== -->
+
+<nav>
+
+    <div class="nav-links">
+
+        <a href="../homepage.html">Home</a>
+
+        <a href="../membership.html">Membership</a>
+
+        <a href="../classes.html">Classes</a>
+
+        <a href="../trainers.html">Personal Trainers</a>
+
+        <a href="../about.html">About Us</a>
+
+        <a href="../contact/contact.html">Contact</a>
+
+        <a href="../supplements/supplements.html">Supplements</a>
+
+    </div>
+
+    <a href="signup.html" class="signup-button">
+        Sign Up
+    </a>
+
+</nav>
+
+<!-- ==============================
+     HERO
+============================== -->
+
+<div class="hero">
+
+    <img src="../images/ironpeakfitness.jpg"
+         class="slide active"
+         alt="Reception area at Iron Peak Fitness">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-text">
+
+        <h2>GET IN TOUCH</h2>
+
+        <p>We're here to help with memberships, classes and training.</p>
+
+    </div>
+
+</div>
+
+<main>
+
+<!-- ==============================
+     CONTACT INFORMATION
+============================== -->
+
+<section>
+
+    <h2>Contact Information</h2>
+
+    <div class="contact-grid">
+
+        <div class="contact-card">
+
+            <h3>📍 Visit Us</h3>
+
+            <p>
+                Iron Peak Fitness<br>
+                123 Fitness Street<br>
+                Belfast BT1 XXX
+            </p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>📞 Phone</h3>
+
+            <p>
+                028 9000 1234
+            </p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>✉ Email</h3>
+
+            <p>
+                info@ironpeakfitness.com
+            </p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <h3>🕒 Opening Hours</h3>
+
+            <p>
+                Monday - Friday<br>
+                6:00am - 10:00pm
+            </p>
+
+            <p>
+                Saturday & Sunday<br>
+                8:00am - 8:00pm
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==============================
+     CONTACT FORM
+============================== -->
+
+<section>
+
+    <h2>Send Us a Message</h2>
+
+    <form id="contactForm">
+
+        <label for="name">Full Name *</label>
+
+        <input
+            type="text"
+            id="name"
+            required
+        >
+
+        <label for="email">Email Address *</label>
+
+        <input
+            type="email"
+            id="email"
+            required
+        >
+
+        <label for="phone">Phone Number</label>
+
+        <input
+            type="tel"
+            id="phone"
+        >
+
+        <label for="membership">Membership Type</label>
+
+        <select id="membership">
+
+            <option value="">Select...</option>
+
+            <option>Basic</option>
+
+            <option>Premium</option>
+
+            <option>Student</option>
+
+            <option>Not a Member</option>
+
+        </select>
+
+        <label for="reason">Reason for Contact</label>
+
+        <select id="reason">
+
+            <option value="">Select...</option>
+
+            <option>Membership Enquiry</option>
+
+            <option>Classes</option>
+
+            <option>Personal Training</option>
+
+            <option>General Question</option>
+
+            <option>Complaint</option>
+
+        </select>
+
+        <label for="message">Message *</label>
+
+        <textarea
+            id="message"
+            rows="6"
+            maxlength="500"
+            required
+        ></textarea>
+
+        <p id="characterCount">
+            0 / 500 characters
+        </p>
+
+        <label>
+
+            <input type="checkbox" id="newsletter">
+
+            I'd like to receive news and offers.
+
+        </label>
+
+        <br><br>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+    <div id="successMessage"></div>
+
+</section>
+
+<!-- ==============================
+     FAQ
+============================== -->
+
+<section>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+
+        <h3 class="faq-question">
+            Do I need a membership before contacting you?
+        </h3>
+
+        <p class="faq-answer">
+            No. Everyone is welcome to contact us with questions.
+        </p>
+
+        <h3 class="faq-question">
+            Can I book a personal trainer online?
+        </h3>
+
+        <p class="faq-answer">
+            Yes. Complete the contact form and we'll arrange a consultation.
+        </p>
+
+        <h3 class="faq-question">
+            Do you offer student memberships?
+        </h3>
+
+        <p class="faq-answer">
+            Yes. Bring a valid student ID when joining.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ==============================
+     FIND US
+============================== -->
+
+<section>
+
+    <h2>Find Us</h2>
+
+    <p>
+        Visit Iron Peak Fitness in Belfast.
+    </p>
+
+    <div id="map"></div>
+
+</section>
+
+</main>
+
+<!-- ==============================
+     FOOTER
+============================== -->
+
+<footer>
+
+    <p><strong>Iron Peak Fitness</strong></p>
+
+    <p>123 Fitness Street, Belfast</p>
+
+    <p>Email: info@ironpeakfitness.com</p>
+
+    <p>Phone: 028 9000 1234</p>
+
+    <p>&copy; 2026 Iron Peak Fitness. All Rights Reserved.</p>
+
+</footer>
+
+<script src="contact.js"></script>
+<script src="../js/auth.js"></script>
+
+</body>
+
+</html>

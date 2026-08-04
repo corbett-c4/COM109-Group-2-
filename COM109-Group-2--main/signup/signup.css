@@ -1,0 +1,143 @@
+/* Sign Up & Login Forms */
+
+/* Form styles */
+
+#signupForm,
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#signupForm label,
+#loginForm label {
+    font-weight: bold;
+    color: white;
+}
+
+#signupForm input,
+#signupForm select,
+#loginForm input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    background: #222;
+    color: white;
+    border: 2px solid #990000;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#signupForm input:focus,
+#signupForm select:focus,
+#loginForm input:focus {
+    outline: none;
+    border-color: #ff3333;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+/* Checkbox row */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: normal !important;
+    color: #ddd !important;
+    cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    accent-color: #cc0000;
+}
+
+.terms-link {
+    color: #ff3333;
+    text-decoration: underline;
+}
+
+.terms-link:hover {
+    color: white;
+}
+
+/* Buttons */
+#signupForm button,
+#loginForm button {
+    width: 220px;
+    align-self: center;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+#signupForm button:hover,
+#loginForm button:hover {
+    transform: scale(1.05);
+}
+
+/* Messages */
+#formMessage,
+#loginMessage {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.msg-error {
+    background: rgba(204, 0, 0, 0.2);
+    border-left: 5px solid #cc0000;
+    color: #ff6666;
+}
+
+.msg-success {
+    background: rgba(40, 167, 69, 0.2);
+    border-left: 5px solid #28a745;
+    color: #66ff66;
+}
+
+/* Input error highlight */
+.input-error {
+    border-color: #ff3333 !important;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5) !important;
+}
+
+/* Hero image */
+.hero img {
+    object-fit: cover;
+}
+
+/* Password toggle */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    padding-right: 45px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.toggle-password:hover {
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #signupForm button,
+    #loginForm button {
+        width: 100%;
+    }
+}
