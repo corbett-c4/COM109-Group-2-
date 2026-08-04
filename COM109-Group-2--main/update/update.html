@@ -13,6 +13,8 @@
 </head>
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <header>
     <h1>Iron Peak Fitness</h1>
     <p><em>"Progress, not perfection."</em></p>
@@ -40,7 +42,7 @@
     </div>
 </div>
 
-<main>
+<main id="main-content">
 
 <!-- Current Details Display -->
 <section id="currentDetails">
@@ -83,10 +85,14 @@
     <form id="updateForm" novalidate>
 
         <label for="editName">Full Name *</label>
-        <input type="text" id="editName" required>
+        <input type="text" id="editName" required
+               aria-describedby="editName-error" aria-invalid="false">
+        <span class="field-error" id="editName-error" aria-live="polite"></span>
 
         <label for="editPhone">Phone Number</label>
-        <input type="tel" id="editPhone">
+        <input type="tel" id="editPhone"
+               aria-describedby="editPhone-error" aria-invalid="false">
+        <span class="field-error" id="editPhone-error" aria-live="polite"></span>
 
         <label for="editMembership">Membership Type *</label>
         <select id="editMembership" required>
@@ -97,15 +103,23 @@
 
         <label for="editPassword">New Password (leave blank to keep current)</label>
         <div class="password-wrapper">
-            <input type="password" id="editPassword" placeholder="Min 8 characters">
-            <span class="toggle-password" data-target="editPassword">👁</span>
+            <input type="password" id="editPassword" placeholder="Min 8 characters"
+                   aria-describedby="editPassword-error editPassword-strength" aria-invalid="false">
+            <span class="toggle-password" data-target="editPassword" role="button" aria-label="Toggle password visibility" tabindex="0">👁</span>
         </div>
+        <div class="strength-meter" id="editPassword-strength" aria-live="polite">
+            <div class="strength-bar"><div class="strength-fill"></div></div>
+            <span class="strength-text"></span>
+        </div>
+        <span class="field-error" id="editPassword-error" aria-live="polite"></span>
 
         <label for="editConfirmPassword">Confirm New Password</label>
         <div class="password-wrapper">
-            <input type="password" id="editConfirmPassword">
-            <span class="toggle-password" data-target="editConfirmPassword">👁</span>
+            <input type="password" id="editConfirmPassword"
+                   aria-describedby="editConfirmPassword-error" aria-invalid="false">
+            <span class="toggle-password" data-target="editConfirmPassword" role="button" aria-label="Toggle password visibility" tabindex="0">👁</span>
         </div>
+        <span class="field-error" id="editConfirmPassword-error" aria-live="polite"></span>
 
         <div class="form-buttons">
             <button type="submit">Save Changes</button>
@@ -114,7 +128,7 @@
 
     </form>
 
-    <div id="updateMessage" role="alert" aria-live="polite"></div>
+    <div id="updateMessage" role="alert" aria-live="assertive"></div>
 </section>
 
 </main>
