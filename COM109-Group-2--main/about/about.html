@@ -13,6 +13,8 @@
 </head>
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <header>
     <h1>Iron Peak Fitness</h1>
     <p><em>"Success starts with self-discipline."</em></p>
@@ -40,80 +42,116 @@
     </div>
 </div>
 
-<main>
+<main id="main-content">
 
-<!-- Our Story -->
+<!-- Our Story - Accordion -->
 <section>
-    <h2>Our Story</h2>
-    <p>
-        Iron Peak Fitness was founded in 2018 in the heart of Belfast with one simple goal —
-        to create a gym that feels welcoming to everyone, regardless of experience or fitness level.
-    </p>
-    <p>
-        What started as a small weights room has grown into a full-service fitness facility
-        with modern equipment, expert coaches, group classes, and a genuine community of
-        members who support each other every day.
-    </p>
+    <h2>Learn More About Us</h2>
+
+    <div class="accordion">
+        <button class="accordion-btn" aria-expanded="false" aria-controls="story-content">
+            <span>Our Story</span>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content" id="story-content" role="region" aria-hidden="true">
+            <p>
+                Iron Peak Fitness was founded in 2018 in the heart of Belfast with one simple goal:
+                to create a gym that feels welcoming to everyone, regardless of experience or fitness level.
+            </p>
+            <p>
+                What started as a small weights room has grown into a full-service fitness facility
+                with modern equipment, expert coaches, group classes, and a genuine community of
+                members who support each other every day.
+            </p>
+        </div>
+
+        <button class="accordion-btn" aria-expanded="false" aria-controls="offer-content">
+            <span>What We Offer</span>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content" id="offer-content" role="region" aria-hidden="true">
+            <ul>
+                <li>Modern strength and cardio equipment</li>
+                <li>Certified personal trainers with tailored programmes</li>
+                <li>Group fitness classes for all levels</li>
+                <li>Nutrition guidance and supplement advice</li>
+                <li>Premium changing rooms and showers</li>
+                <li>Flexible membership plans including student discounts</li>
+            </ul>
+        </div>
+
+        <button class="accordion-btn" aria-expanded="false" aria-controls="hours-content">
+            <span>Opening Hours</span>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content" id="hours-content" role="region" aria-hidden="true">
+            <div class="hours-grid">
+                <div class="hours-card">
+                    <h3>Monday – Friday</h3>
+                    <p>6:00am – 10:00pm</p>
+                </div>
+                <div class="hours-card">
+                    <h3>Saturday & Sunday</h3>
+                    <p>8:00am – 8:00pm</p>
+                </div>
+            </div>
+        </div>
+
+        <button class="accordion-btn" aria-expanded="false" aria-controls="location-content">
+            <span>Where to Find Us</span>
+            <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-content" id="location-content" role="region" aria-hidden="true">
+            <p>
+                We're located at <strong>123 Fitness Street, Belfast</strong>. Drop in for a tour
+                any time during opening hours, no appointment needed.
+            </p>
+            <p>
+                Got questions? Get in touch via our <a href="../contact/contact.html" class="inline-link">Contact page</a>
+                or call us on <strong>028 9000 1234</strong>.
+            </p>
+        </div>
+    </div>
 </section>
 
-<!-- Our Mission -->
+<!-- Our Mission - Flip Cards -->
 <section>
     <h2>Our Mission</h2>
+    <p>Click a card to learn more.</p>
     <div class="mission-grid">
-        <div class="mission-card">
-            <h3>💪 Strength</h3>
-            <p>We help our members build physical and mental strength through structured training and expert guidance.</p>
+        <div class="flip-card" tabindex="0" role="button" aria-label="Strength - click to reveal more">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>💪 Strength</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>We help our members build physical and mental strength through structured training and expert guidance.</p>
+                </div>
+            </div>
         </div>
-        <div class="mission-card">
-            <h3>🤝 Community</h3>
-            <p>We foster a supportive environment where everyone belongs — from beginners to competitive athletes.</p>
+
+        <div class="flip-card" tabindex="0" role="button" aria-label="Community - click to reveal more">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>🤝 Community</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>We foster a supportive environment where everyone belongs, from beginners to competitive athletes.</p>
+                </div>
+            </div>
         </div>
-        <div class="mission-card">
-            <h3>📈 Progress</h3>
-            <p>We believe in steady, sustainable progress. No shortcuts, no gimmicks — just hard work and consistency.</p>
+
+        <div class="flip-card" tabindex="0" role="button" aria-label="Progress - click to reveal more">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h3>📈 Progress</h3>
+                </div>
+                <div class="flip-card-back">
+                    <p>We believe in steady, sustainable progress. No shortcuts, no gimmicks, just hard work and consistency.</p>
+                </div>
+            </div>
         </div>
     </div>
-</section>
-
-<!-- What We Offer -->
-<section>
-    <h2>What We Offer</h2>
-    <ul>
-        <li>Modern strength and cardio equipment</li>
-        <li>Certified personal trainers with tailored programmes</li>
-        <li>Group fitness classes for all levels</li>
-        <li>Nutrition guidance and supplement advice</li>
-        <li>Premium changing rooms and showers</li>
-        <li>Flexible membership plans including student discounts</li>
-    </ul>
-</section>
-
-<!-- Opening Hours -->
-<section>
-    <h2>Opening Hours</h2>
-    <div class="hours-grid">
-        <div class="hours-card">
-            <h3>Monday – Friday</h3>
-            <p>6:00am – 10:00pm</p>
-        </div>
-        <div class="hours-card">
-            <h3>Saturday & Sunday</h3>
-            <p>8:00am – 8:00pm</p>
-        </div>
-    </div>
-</section>
-
-<!-- Location -->
-<section>
-    <h2>Where to Find Us</h2>
-    <p>
-        We're located at <strong>123 Fitness Street, Belfast</strong>. Drop in for a tour
-        any time during opening hours — no appointment needed.
-    </p>
-    <p>
-        Got questions? Get in touch via our <a href="../contact/contact.html" class="inline-link">Contact page</a>
-        or call us on <strong>028 9000 1234</strong>.
-    </p>
 </section>
 
 </main>
@@ -126,6 +164,7 @@
     <p>&copy; 2026 Iron Peak Fitness. All Rights Reserved.</p>
 </footer>
 
+<script src="about.js"></script>
 <script src="../js/auth.js"></script>
 </body>
 </html>

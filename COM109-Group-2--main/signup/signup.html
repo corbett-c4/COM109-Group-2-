@@ -13,6 +13,8 @@
 </head>
 <body>
 
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <header>
     <h1>Iron Peak Fitness</h1>
     <p><em>"Strength does not come from the body. It comes from the will."</em></p>
@@ -40,7 +42,7 @@
     </div>
 </div>
 
-<main>
+<main id="main-content">
 
 <!-- Sign Up Form -->
 <section>
@@ -49,42 +51,60 @@
     <form id="signupForm" novalidate>
 
         <label for="fullName">Full Name *</label>
-        <input type="text" id="fullName" placeholder="e.g. John Smith" required>
+        <input type="text" id="fullName" placeholder="e.g. John Smith" required
+               aria-describedby="fullName-error" aria-invalid="false">
+        <span class="field-error" id="fullName-error" aria-live="polite"></span>
 
         <label for="email">Email Address *</label>
-        <input type="email" id="email" placeholder="e.g. john@email.com" required>
+        <input type="email" id="email" placeholder="e.g. john@email.com" required
+               aria-describedby="email-error" aria-invalid="false">
+        <span class="field-error" id="email-error" aria-live="polite"></span>
 
         <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" placeholder="e.g. 07712345678">
+        <input type="tel" id="phone" placeholder="e.g. 07712345678"
+               aria-describedby="phone-error" aria-invalid="false">
+        <span class="field-error" id="phone-error" aria-live="polite"></span>
 
         <label for="dob">Date of Birth *</label>
-        <input type="date" id="dob" required>
+        <input type="date" id="dob" required
+               aria-describedby="dob-error" aria-invalid="false">
+        <span class="field-error" id="dob-error" aria-live="polite"></span>
 
         <label for="membership">Membership Type *</label>
-        <select id="membership" required>
+        <select id="membership" required
+                aria-describedby="membership-error" aria-invalid="false">
             <option value="">Choose a plan...</option>
             <option value="basic">Basic - £19.99/month</option>
             <option value="premium">Premium - £34.99/month</option>
             <option value="student">Student - £14.99/month</option>
         </select>
+        <span class="field-error" id="membership-error" aria-live="polite"></span>
 
         <label for="password">Password *</label>
         <div class="password-wrapper">
-            <input type="password" id="password" placeholder="Min 8 characters" required>
-            <span class="toggle-password" data-target="password">👁</span>
+            <input type="password" id="password" placeholder="Min 8 characters" required
+                   aria-describedby="password-error password-strength" aria-invalid="false">
+            <span class="toggle-password" data-target="password" role="button" aria-label="Toggle password visibility" tabindex="0">👁</span>
         </div>
+        <div class="strength-meter" id="password-strength" aria-live="polite">
+            <div class="strength-bar"><div class="strength-fill"></div></div>
+            <span class="strength-text"></span>
+        </div>
+        <span class="field-error" id="password-error" aria-live="polite"></span>
 
         <label for="confirmPassword">Confirm Password *</label>
         <div class="password-wrapper">
-            <input type="password" id="confirmPassword" placeholder="Re-enter password" required>
-            <span class="toggle-password" data-target="confirmPassword">👁</span>
+            <input type="password" id="confirmPassword" placeholder="Re-enter password" required
+                   aria-describedby="confirmPassword-error" aria-invalid="false">
+            <span class="toggle-password" data-target="confirmPassword" role="button" aria-label="Toggle password visibility" tabindex="0">👁</span>
         </div>
+        <span class="field-error" id="confirmPassword-error" aria-live="polite"></span>
 
         <button type="submit">Create Account</button>
 
     </form>
 
-    <div id="formMessage" role="alert" aria-live="polite"></div>
+    <div id="formMessage" role="alert" aria-live="assertive"></div>
 </section>
 
 <!-- Login Section -->
@@ -95,19 +115,23 @@
     <form id="loginForm" novalidate>
 
         <label for="loginEmail">Email Address *</label>
-        <input type="email" id="loginEmail" placeholder="Your email" required>
+        <input type="email" id="loginEmail" placeholder="Your email" required
+               aria-describedby="loginEmail-error" aria-invalid="false">
+        <span class="field-error" id="loginEmail-error" aria-live="polite"></span>
 
         <label for="loginPassword">Password *</label>
         <div class="password-wrapper">
-            <input type="password" id="loginPassword" placeholder="Your password" required>
-            <span class="toggle-password" data-target="loginPassword">👁</span>
+            <input type="password" id="loginPassword" placeholder="Your password" required
+                   aria-describedby="loginPassword-error" aria-invalid="false">
+            <span class="toggle-password" data-target="loginPassword" role="button" aria-label="Toggle password visibility" tabindex="0">👁</span>
         </div>
+        <span class="field-error" id="loginPassword-error" aria-live="polite"></span>
 
         <button type="submit">Log In</button>
 
     </form>
 
-    <div id="loginMessage" role="alert" aria-live="polite"></div>
+    <div id="loginMessage" role="alert" aria-live="assertive"></div>
 </section>
 
 </main>
