@@ -1,0 +1,385 @@
+/* Membership Page Styles */
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    z-index: 1000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #cc0000;
+    color: white;
+    font-weight: bold;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+nav a[aria-current="page"] {
+    color: #ff3333;
+}
+
+.membership-hero img {
+    object-fit: cover;
+}
+
+.membership-hero-text {
+    animation: heroReveal 0.8s ease-out both;
+}
+
+.membership-intro {
+    text-align: center;
+    animation: fadeUp 0.7s ease-out both;
+}
+
+.membership-intro p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: #dddddd;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.plan-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 24px;
+    overflow: hidden;
+    border: 2px solid #4b4b4b;
+    border-radius: 12px;
+    background: rgba(34, 34, 34, 0.94);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+    animation: fadeUp 0.65s ease-out both;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.plan-card:nth-child(2) {
+    animation-delay: 0.12s;
+}
+
+.plan-card:nth-child(3) {
+    animation-delay: 0.24s;
+}
+
+.plan-card:hover,
+.plan-card:focus-within {
+    transform: translateY(-8px);
+    border-color: #ff3333;
+    box-shadow: 0 16px 35px rgba(204, 0, 0, 0.28);
+}
+
+.featured-plan {
+    border-color: #cc0000;
+}
+
+.popular-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 7px 14px;
+    border-radius: 0 10px 0 10px;
+    background: #cc0000;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.plan-icon {
+    font-size: 42px;
+    animation: iconFloat 3s ease-in-out infinite;
+}
+
+.plan-card h2 {
+    margin-bottom: 8px;
+    color: #ff3333;
+    font-size: 30px;
+}
+
+.plan-tagline {
+    min-height: 42px;
+    margin-top: 0;
+    color: #cccccc;
+}
+
+.plan-price {
+    padding: 14px 0;
+    border-top: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+    color: #dddddd;
+}
+
+.plan-price span {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.plan-card ul {
+    flex: 1;
+    padding: 0;
+    list-style: none;
+}
+
+.plan-card li {
+    position: relative;
+    padding-left: 24px;
+    color: #eeeeee;
+    line-height: 1.5;
+}
+
+.plan-card li::before {
+    position: absolute;
+    left: 0;
+    color: #66dd7a;
+    content: "✓";
+    font-weight: bold;
+}
+
+.plan-button,
+.primary-link {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 5px;
+    background: #cc0000;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.plan-button:hover,
+.plan-button:focus,
+.primary-link:hover,
+.primary-link:focus {
+    transform: scale(1.04);
+    background: #ff3333;
+}
+
+.plan-card.active-plan {
+    border-color: #28a745;
+    box-shadow: 0 0 24px rgba(40, 167, 69, 0.32);
+}
+
+.plan-card.active-plan::after {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 5px 9px;
+    border-radius: 4px;
+    background: #28a745;
+    color: white;
+    content: "Your Plan";
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.comparison-section,
+.testimonials-section,
+.faq-section {
+    animation: fadeUp 0.7s ease-out both;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 14px;
+    border: 1px solid #555555;
+}
+
+thead th {
+    background: #990000;
+    color: white;
+}
+
+tbody th {
+    background: rgba(0, 0, 0, 0.35);
+    color: white;
+    text-align: left;
+}
+
+tbody tr:hover {
+    background: rgba(255, 51, 51, 0.1);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+blockquote {
+    margin: 0;
+    padding: 20px;
+    border-left: 4px solid #cc0000;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.35);
+    transition: transform 0.25s;
+}
+
+blockquote:hover {
+    transform: translateY(-5px);
+}
+
+blockquote p {
+    line-height: 1.6;
+}
+
+blockquote cite {
+    color: #ff7777;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.info-grid section {
+    height: auto;
+}
+
+.trial-section {
+    text-align: center;
+}
+
+.faq-section details {
+    margin-bottom: 12px;
+    border: 1px solid #555555;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.faq-section summary {
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq-section details[open] summary {
+    color: #ff3333;
+}
+
+.faq-section details p {
+    margin: 0;
+    padding: 0 15px 15px;
+    color: #dddddd;
+}
+
+.account-section {
+    animation: fadeUp 0.7s 0.2s ease-out both;
+}
+
+.account-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.eyebrow {
+    margin-bottom: 4px;
+    color: #aaaaaa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.account-heading h2 {
+    margin-top: 0;
+}
+
+.current-plan {
+    padding: 12px 16px;
+    border-left: 4px solid #28a745;
+    border-radius: 5px;
+    background: rgba(40, 167, 69, 0.14);
+}
+
+@keyframes heroReveal {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes iconFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+@media (max-width: 900px) {
+    .plans-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonial-grid,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .plan-tagline {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .account-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    th,
+    td {
+        padding: 10px 7px;
+        font-size: 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .membership-hero-text,
+    .membership-intro,
+    .plan-card,
+    .comparison-section,
+    .testimonials-section,
+    .faq-section,
+    .account-section,
+    .plan-icon {
+        animation: none !important;
+    }
+}

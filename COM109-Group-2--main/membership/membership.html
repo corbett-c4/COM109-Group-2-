@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Iron Peak Fitness</title>
+    <link rel="icon" type="image/x-icon" href="../favicon_io/Favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/Favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/Favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="membership.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header>
+    <h1>Iron Peak Fitness</h1>
+    <p><em>"Choose your challenge. Reach your peak."</em></p>
+</header>
+
+<nav>
+    <div class="nav-links">
+        <a href="../homepage.html">Home</a>
+        <a href="membership.html" aria-current="page">Membership</a>
+        <a href="../classes.html">Classes</a>
+        <a href="../trainers.html">Personal Trainers</a>
+        <a href="../about.html">About Us</a>
+        <a href="../contact/contact.html">Contact</a>
+        <a href="../supplements/supplements.html">Supplements</a>
+    </div>
+    <a href="../signup/signup.html" class="signup-button" id="accountNavLink">Sign Up</a>
+</nav>
+
+<div class="hero membership-hero">
+    <img src="../images/weights.jpg" class="slide active" alt="Iron Peak Fitness weights area">
+    <div class="hero-overlay"></div>
+    <div class="hero-text membership-hero-text">
+        <h2>FIND YOUR MEMBERSHIP</h2>
+        <p>Flexible plans built around your goals.</p>
+    </div>
+</div>
+
+<main id="main-content">
+    <section class="membership-intro">
+        <h2>Train Your Way</h2>
+        <p>Every membership includes a welcoming gym community, modern equipment and support from the Iron Peak team. Compare our plans below and choose the right fit.</p>
+    </section>
+
+    <div class="plans-grid" aria-label="Membership plans">
+        <article class="plan-card" data-plan="basic">
+            <div class="plan-icon" aria-hidden="true">💪</div>
+            <h2>Basic</h2>
+            <p class="plan-tagline">Everything you need to get moving.</p>
+            <p class="plan-price"><span>£19.99</span> / month</p>
+            <ul>
+                <li>Full gym-floor access</li>
+                <li>Cardio and strength equipment</li>
+                <li>Changing and shower facilities</li>
+                <li>Free fitness induction</li>
+            </ul>
+            <a class="plan-button" href="../signup/signup.html?membership=basic">Choose Basic</a>
+        </article>
+
+        <article class="plan-card featured-plan" data-plan="premium">
+            <p class="popular-badge">Most Popular</p>
+            <div class="plan-icon" aria-hidden="true">🏆</div>
+            <h2>Premium</h2>
+            <p class="plan-tagline">Extra support for bigger goals.</p>
+            <p class="plan-price"><span>£34.99</span> / month</p>
+            <ul>
+                <li>Everything included with Basic</li>
+                <li>Unlimited group fitness classes</li>
+                <li>One trainer check-in each month</li>
+                <li>Sauna and recovery-zone access</li>
+            </ul>
+            <a class="plan-button" href="../signup/signup.html?membership=premium">Choose Premium</a>
+        </article>
+
+        <article class="plan-card" data-plan="student">
+            <div class="plan-icon" aria-hidden="true">🎓</div>
+            <h2>Student</h2>
+            <p class="plan-tagline">Serious training at a student price.</p>
+            <p class="plan-price"><span>£14.99</span> / month</p>
+            <ul>
+                <li>Full gym-floor access</li>
+                <li>Cardio and strength equipment</li>
+                <li>Selected weekly fitness classes</li>
+                <li>Valid student ID required</li>
+            </ul>
+            <a class="plan-button" href="../signup/signup.html?membership=student">Choose Student</a>
+        </article>
+    </div>
+
+    <section class="comparison-section">
+        <h2>Compare Memberships</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Benefit</th>
+                        <th scope="col">Basic</th>
+                        <th scope="col">Premium</th>
+                        <th scope="col">Student</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><th scope="row">Gym access</th><td>✓</td><td>✓</td><td>✓</td></tr>
+                    <tr><th scope="row">Fitness classes</th><td>—</td><td>Unlimited</td><td>Selected</td></tr>
+                    <tr><th scope="row">Trainer check-in</th><td>—</td><td>Monthly</td><td>—</td></tr>
+                    <tr><th scope="row">Recovery zone</th><td>—</td><td>✓</td><td>—</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <h2>What Our Members Say</h2>
+        <div class="testimonial-grid">
+            <blockquote>
+                <p>“The Basic plan has everything I need and the gym always feels welcoming.”</p>
+                <cite>— Alex, member for 1 year</cite>
+            </blockquote>
+            <blockquote>
+                <p>“The classes keep me motivated and make Premium great value for money.”</p>
+                <cite>— Rachel, Premium member</cite>
+            </blockquote>
+            <blockquote>
+                <p>“The Student plan lets me train regularly without stretching my budget.”</p>
+                <cite>— Jamie, university student</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <div class="info-grid">
+        <section class="terms-section">
+            <h2>Simple Membership Terms</h2>
+            <ul>
+                <li>Memberships are paid monthly.</li>
+                <li>Cancel with 30 days' notice.</li>
+                <li>Plans can be frozen for up to two months.</li>
+                <li>Student memberships require valid student ID.</li>
+            </ul>
+        </section>
+
+        <section class="trial-section">
+            <h2>Not Sure Yet?</h2>
+            <p>Contact our team to arrange a gym tour or ask about a free day pass.</p>
+            <a class="primary-link" href="../contact/contact.html">Request a Day Pass</a>
+        </section>
+    </div>
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary>Can I change my membership later?</summary>
+            <p>Yes. Logged-in members can change their plan from the Manage Account page.</p>
+        </details>
+        <details>
+            <summary>Is there a joining fee?</summary>
+            <p>No. There is no joining fee for any of the memberships shown above.</p>
+        </details>
+        <details>
+            <summary>How old do I need to be?</summary>
+            <p>Members must be at least 16 years old to create an account.</p>
+        </details>
+        <details>
+            <summary>Can I cancel or freeze my plan?</summary>
+            <p>Yes. Plans can be cancelled with 30 days' notice or temporarily frozen.</p>
+        </details>
+    </section>
+
+    <section id="account" class="account-section">
+        <div id="guestAccount">
+            <h2>Ready to Join?</h2>
+            <p>Create your account through our sign-up page and select your membership.</p>
+            <a class="primary-link" href="../signup/signup.html">Create an Account</a>
+        </div>
+
+        <div id="memberAccount" hidden>
+            <div class="account-heading">
+                <div>
+                    <p class="eyebrow">Current member</p>
+                    <h2>Your Membership</h2>
+                </div>
+                <p class="current-plan">Current plan: <strong id="currentPlan">—</strong></p>
+            </div>
+            <p>Update your details, password or membership from the account page.</p>
+            <a class="primary-link" href="../update/update.html">Manage Account</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p><strong>Iron Peak Fitness</strong></p>
+    <p>123 Fitness Street, Belfast</p>
+    <p>Email: info@ironpeakfitness.com</p>
+    <p>Phone: 028 9000 1234</p>
+    <p>&copy; 2026 Iron Peak Fitness. All Rights Reserved.</p>
+</footer>
+
+<script src="membership.js"></script>
+</body>
+</html>
