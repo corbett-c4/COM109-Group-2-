@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Classes - Iron Peak Fitness</title>
+    <link rel="icon" type="image/x-icon" href="../favicon_io/Favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/Favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/Favicon/apple-touch-icon.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="classes.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header>
+    <h1>Iron Peak Fitness</h1>
+    <p><em>"Stronger together, one class at a time."</em></p>
+</header>
+
+<nav>
+    <div class="nav-links">
+        <a href="../homepage.html">Home</a>
+        <a href="../membership.html">Membership</a>
+        <a href="classes.html" aria-current="page">Classes</a>
+        <a href="../trainers.html">Personal Trainers</a>
+        <a href="../about.html">About Us</a>
+        <a href="../contact/contact.html">Contact</a>
+        <a href="../supplements/supplements.html">Supplements</a>
+    </div>
+    <a href="../signup/signup.html" class="signup-button" id="accountNavLink">Sign Up</a>
+</nav>
+
+<div class="hero classes-hero">
+    <img src="../images/trainer.jpg" class="slide active" alt="Group fitness training at Iron Peak Fitness">
+    <div class="hero-overlay"></div>
+    <div class="hero-text classes-hero-text">
+        <h2>FITNESS CLASSES</h2>
+        <p>Move more, train together and enjoy every session.</p>
+    </div>
+</div>
+
+<main id="main-content">
+    <section class="classes-intro">
+        <h2>Find Your Next Class</h2>
+        <p>Our weekly classes suit different fitness levels and goals. Filter the sessions below, then choose a class that works for you.</p>
+    </section>
+
+    <div class="class-filters" aria-label="Filter classes by difficulty">
+        <button type="button" class="filter-button active-filter" data-level="all">All Classes</button>
+        <button type="button" class="filter-button" data-level="beginner">Beginner</button>
+        <button type="button" class="filter-button" data-level="intermediate">Intermediate</button>
+        <button type="button" class="filter-button" data-level="advanced">Advanced</button>
+    </div>
+
+    <div class="classes-grid" aria-live="polite">
+        <article class="class-card" data-level="beginner">
+            <div class="class-icon" aria-hidden="true">🧘</div>
+            <span class="level beginner">Beginner</span>
+            <h2>Yoga &amp; Mobility</h2>
+            <p>Improve flexibility, balance and recovery through guided movement and stretching.</p>
+            <dl><div><dt>Trainer</dt><dd>Emma</dd></div><div><dt>Duration</dt><dd>45 mins</dd></div><div><dt>Next class</dt><dd>Monday, 10:00</dd></div></dl>
+            <button type="button" class="book-button" data-class="Yoga &amp; Mobility">Book Class</button>
+        </article>
+
+        <article class="class-card" data-level="advanced">
+            <div class="class-icon" aria-hidden="true">🔥</div>
+            <span class="level advanced">Advanced</span>
+            <h2>HIIT Blast</h2>
+            <p>A fast-paced workout combining cardio intervals and bodyweight exercises.</p>
+            <dl><div><dt>Trainer</dt><dd>Daniel</dd></div><div><dt>Duration</dt><dd>30 mins</dd></div><div><dt>Next class</dt><dd>Monday, 18:00</dd></div></dl>
+            <button type="button" class="book-button" data-class="HIIT Blast">Book Class</button>
+        </article>
+
+        <article class="class-card" data-level="intermediate">
+            <div class="class-icon" aria-hidden="true">🏋️</div>
+            <span class="level intermediate">Intermediate</span>
+            <h2>Strength Circuit</h2>
+            <p>Build full-body strength using free weights, resistance equipment and circuits.</p>
+            <dl><div><dt>Trainer</dt><dd>James</dd></div><div><dt>Duration</dt><dd>50 mins</dd></div><div><dt>Next class</dt><dd>Tuesday, 17:30</dd></div></dl>
+            <button type="button" class="book-button" data-class="Strength Circuit">Book Class</button>
+        </article>
+
+        <article class="class-card" data-level="beginner">
+            <div class="class-icon" aria-hidden="true">🚴</div>
+            <span class="level beginner">Beginner</span>
+            <h2>Spin Start</h2>
+            <p>An energetic indoor cycling class with simple routines and adjustable intensity.</p>
+            <dl><div><dt>Trainer</dt><dd>Sarah</dd></div><div><dt>Duration</dt><dd>40 mins</dd></div><div><dt>Next class</dt><dd>Wednesday, 08:00</dd></div></dl>
+            <button type="button" class="book-button" data-class="Spin Start">Book Class</button>
+        </article>
+
+        <article class="class-card" data-level="intermediate">
+            <div class="class-icon" aria-hidden="true">🥊</div>
+            <span class="level intermediate">Intermediate</span>
+            <h2>Box Fit</h2>
+            <p>Learn boxing combinations while improving cardio fitness, speed and coordination.</p>
+            <dl><div><dt>Trainer</dt><dd>Daniel</dd></div><div><dt>Duration</dt><dd>45 mins</dd></div><div><dt>Next class</dt><dd>Thursday, 19:00</dd></div></dl>
+            <button type="button" class="book-button" data-class="Box Fit">Book Class</button>
+        </article>
+
+        <article class="class-card" data-level="beginner">
+            <div class="class-icon" aria-hidden="true">⚡</div>
+            <span class="level beginner">Beginner</span>
+            <h2>Core Foundations</h2>
+            <p>Develop core stability and improve posture with controlled, beginner-friendly exercises.</p>
+            <dl><div><dt>Trainer</dt><dd>Emma</dd></div><div><dt>Duration</dt><dd>35 mins</dd></div><div><dt>Next class</dt><dd>Friday, 12:30</dd></div></dl>
+            <button type="button" class="book-button" data-class="Core Foundations">Book Class</button>
+        </article>
+    </div>
+
+    <div id="bookingMessage" role="alert" aria-live="assertive"></div>
+
+    <section id="myBookings" class="bookings-section" hidden>
+        <h2>My Bookings</h2>
+        <p id="noBookings">You have not booked any classes yet.</p>
+        <ul id="bookingsList" aria-live="polite"></ul>
+    </section>
+
+    <section class="timetable-section">
+        <h2>Weekly Timetable</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead><tr><th scope="col">Day</th><th scope="col">Morning</th><th scope="col">Afternoon</th><th scope="col">Evening</th></tr></thead>
+                <tbody>
+                    <tr><th scope="row">Monday</th><td>Yoga, 10:00</td><td>—</td><td>HIIT, 18:00</td></tr>
+                    <tr><th scope="row">Tuesday</th><td>Spin, 08:00</td><td>Core, 12:30</td><td>Strength, 17:30</td></tr>
+                    <tr><th scope="row">Wednesday</th><td>Yoga, 09:00</td><td>—</td><td>Box Fit, 19:00</td></tr>
+                    <tr><th scope="row">Thursday</th><td>Spin, 08:00</td><td>Core, 13:00</td><td>HIIT, 18:30</td></tr>
+                    <tr><th scope="row">Friday</th><td>Yoga, 10:00</td><td>Core, 12:30</td><td>Strength, 17:00</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="classes-cta">
+        <h2>Classes Included With Premium</h2>
+        <p>Premium members receive unlimited access to all group fitness classes.</p>
+        <a href="../membership.html" class="classes-link">View Memberships</a>
+    </section>
+</main>
+
+<footer>
+    <p><strong>Iron Peak Fitness</strong></p>
+    <p>123 Fitness Street, Belfast</p>
+    <p>Email: info@ironpeakfitness.com</p>
+    <p>Phone: 028 9000 1234</p>
+    <p>&copy; 2026 Iron Peak Fitness. All Rights Reserved.</p>
+</footer>
+
+<script src="classes.js"></script>
+</body>
+</html>
