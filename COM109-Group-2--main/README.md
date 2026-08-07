@@ -29,7 +29,7 @@ Iron Peak Fitness is a responsive multi-page gym website developed using HTML, C
 - CSS
 - JavaScript
 - jQuery
-- 
+  
 # Link to Git Repo
 https://github.com/corbett-c4/COM109-Group-2-
 
